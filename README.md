@@ -1,15 +1,3 @@
-# Real World Vue.js Boilerplate
-This project based on real world practice and ready to use. Have a fun!
-
-## Features
-- Http request class that implements API calls with Auth and tokens refresh based on Axios
-- Data access layer/API calls
-- Response wrapper/Response error wrapper
-- Base common and layout components
-- Some help mixins
-- Vue CLI v4
-- Developed to work with: https://github.com/zmts/supra-api-nodejs
-
 ## Project structure
 - [`src`](#src)
   - [`assets`](#assets)
@@ -133,11 +121,12 @@ Set up yours svg icons in `src/components/icons/` folder. Modify `UiIconBase.vue
 
 ## Build Setup
 ``` bash
-# clone repo
-git clone https://github.com/zmts/vuejs-boilerplate.git
-
 # install dependencies
 npm install
+
+sudo npm update --depth 5 @babel/preset-env
+
+sudo npm update --depth 5 @babel/compat-data# vue-structure
 
 # serve with hot reload at localhost:8080
 npm run serve
@@ -147,18 +136,3 @@ npm run build
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-# Amazing repos where I found some great approaches:
-- https://github.com/sdras/vue-sample-svg-icons
-- https://github.com/MillerRen/vue-boilerplate
-- https://github.com/vuejs-tips/v-debounce
-
-__!!! Project still in progress !!!__
-
-_2017 - 2018 - 2019 - 2020 ..._
-
-
-sudo npm update --depth 5 @babel/preset-env
-After then, same error occurred with "@babel/compat-data/corejs3-shipped-proposals"
-I ran some command for it too:
-sudo npm update --depth 5 @babel/compat-data# vue-structure
