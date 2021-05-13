@@ -4,3 +4,4 @@
  */
 
 // import Vue from 'vue'
+import './veeValidate'
