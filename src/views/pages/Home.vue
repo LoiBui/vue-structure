@@ -1,23 +1,25 @@
 <template>
   <div class="home page">
     Home Page
+    <input type="text" @debounce-change="debounceTest">
   </div>
 </template>
 
 <script>
+import debounce from '@/directives/debounce'
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  directives: {
+    debounce
+  },
+  methods: {
+    debounceTest () {
+      console.log('zoooo')
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-.some-modal-content {
-  min-width: 400px;
-  padding: 25px;
 
-  .buttons button {
-    padding: 10px;
-    margin: 10px;
-  }
-}
 </style>
