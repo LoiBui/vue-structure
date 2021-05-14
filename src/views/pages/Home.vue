@@ -34,10 +34,11 @@ export default {
       console.log('zooo throttle')
     },
     validateBeforeSubmit () {
-      this.$validator.validateAll().then((result) => {
-        console.log(result)
-      })
-      this.$i18n.locale = 'en'
+      // this.$validator.validateAll().then((result) => {
+      //   console.log(result)
+      // })
+      // this.$i18n.locale = 'en'
+      console.log(this.$FORMAT_DATETIME)
     }
   }
 }

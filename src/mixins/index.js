@@ -1,5 +1,5 @@
 /**
- * import and init global mixins
+ * import and init GLOBAL mixins
  */
 
 import Vue from 'vue'
