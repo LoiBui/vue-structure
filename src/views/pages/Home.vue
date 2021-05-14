@@ -1,7 +1,12 @@
 <template>
   <div class="home page">
     <p>{{ $t("language") }}</p>
-    <input type="text" @debounce-change="debounceTest">
+    <input type="text"
+      v-debounce="500"
+      @throttle-change="throttleChange"
+      v-throttle="500"
+      @debounce-change="debounceTest"
+      placeholder="test">
     <form @submit.prevent="validateBeforeSubmit">
       <input v-validate="'required|email'" name="email" type="text">
       <i v-show="errors.has('email')" class="fa fa-warning"></i>
@@ -13,14 +18,20 @@
 
 <script>
 import debounce from '@/directives/debounce'
+import throttle from '@/directives/throttle'
+
 export default {
   name: 'IndexPage',
   directives: {
-    debounce
+    debounce,
+    throttle
   },
   methods: {
     debounceTest () {
       console.log('zoooo')
+    },
+    throttleChange () {
+      console.log('zooo throttle')
     },
     validateBeforeSubmit () {
       this.$validator.validateAll().then((result) => {
