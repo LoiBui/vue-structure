@@ -1,6 +1,6 @@
 <template>
   <div class="header wrapper">
-    header
+    <!-- header -->
   </div>
 </template>
 

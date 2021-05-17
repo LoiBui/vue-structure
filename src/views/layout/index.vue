@@ -22,4 +22,9 @@ export default {
     AppFooter
   }
 }
-</script>s
+</script>
+<style scoped>
+  .wrapper{
+    padding-top: 50px;
+  }
+</style>

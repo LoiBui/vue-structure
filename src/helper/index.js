@@ -1,5 +1,9 @@
 import debounce from './debounce'
+import throttle from './throttle'
+import makeUuid from './makeUuid'
 
-export default {
-  debounce
+export {
+  debounce,
+  throttle,
+  makeUuid
 }

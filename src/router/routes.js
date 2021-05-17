@@ -2,6 +2,7 @@
 // single pages
 import homePage from '../views/pages/Home'
 import notFoundPage from '../views/pages/NotFound'
+import todos from '@/views/pages/todo'
 
 export const routes = [
   {
@@ -14,5 +15,10 @@ export const routes = [
     path: '*',
     component: notFoundPage,
     meta: { title: 'not found' }
+  },
+  {
+    path: '/todos',
+    name: 'todos',
+    component: todos
   }
 ]

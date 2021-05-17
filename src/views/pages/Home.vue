@@ -1,10 +1,10 @@
 <template>
   <div class="home page">
     <p>{{ $t("language") }}</p>
+    {{dataTest}}
+    <br>
     <input type="text"
       v-debounce="500"
-      @throttle-change="throttleChange"
-      v-throttle="500"
       @debounce-change="debounceTest"
       placeholder="test">
     <form @submit.prevent="validateBeforeSubmit">
@@ -18,20 +18,25 @@
 
 <script>
 import debounce from '@/directives/debounce'
-import throttle from '@/directives/throttle'
+import {mapGetters, mapState} from 'vuex'
 
 export default {
   name: 'IndexPage',
   directives: {
-    debounce,
-    throttle
+    debounce
+  },
+  computed: {
+    // ...mapState('moduleName', {
+    //   loiFromState: state => state.dataTest
+    // }),
+    // ...mapGetters(['moduleName/dataTest']),
+    // ...mapGetters('moduleName', ['dataTest']),
   },
   methods: {
     debounceTest () {
-      console.log('zoooo')
-    },
-    throttleChange () {
-      console.log('zooo throttle')
+      // console.log(this['moduleName/dataTest'])
+      // console.log(this.dataTest)
+      // console.log(this.loiFromState)
     },
     validateBeforeSubmit () {
       // this.$validator.validateAll().then((result) => {
@@ -39,6 +44,9 @@ export default {
       // })
       // this.$i18n.locale = 'en'
       console.log(this.$FORMAT_DATETIME)
+    },
+    onTest(){
+      console.log("on test")
     }
   }
 }

@@ -8,9 +8,11 @@ import i18n from './thirdParty/i18n'
 import './mixins'
 import './plugins'
 import './thirdParty'
+import './directives/globals'
 
 import './scss/style.scss'
 import './assets/fonts/bebasneue.css'
+import './assets/css/main.css'
 
 Vue.config.productionTip = false
 
