@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import listTodo from "@/views/components/todos/listTodo";
+import listTodo from "./components/listTodo";
 import Modal from "../../components/todos/modal.vue";
 
 
