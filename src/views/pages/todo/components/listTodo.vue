@@ -11,7 +11,7 @@
       ></item>
     </ul>
     <div v-else>
-      <p class="txt-msg">Pending task is empty</p>
+      <p class="txt-msg">Empty</p>
     </div>
 
     <h1 class="title">Done Task</h1>
@@ -26,7 +26,7 @@
       ></item>
     </ul>
     <div v-else>
-      <p class="txt-msg">Done task is empty</p>
+      <p class="txt-msg">Empty</p>
     </div>
   </div>
 </template>
