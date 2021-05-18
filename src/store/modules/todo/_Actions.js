@@ -1,8 +1,11 @@
+import TodoService from "@/services/todo.service";
+
 export default {
   addTask ({ commit }, payload) {
     commit('ADD_NEW_TASK', payload)
   },
-  setTodos({commit}, todos) {
+  getTodos({commit}) {
+    const todos = TodoService.getTodos();
     commit('SET_TODOS', todos)
   },
   doneTask ({commit}, {id}) {

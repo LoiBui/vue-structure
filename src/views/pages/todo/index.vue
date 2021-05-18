@@ -11,7 +11,7 @@
 <script>
 import listTodo from "@/views/components/todos/listTodo";
 import Modal from "../../components/todos/modal.vue";
-import TodoService from "@/services/todo.service";
+
 
 export default {
   name: "todos",
@@ -25,8 +25,7 @@ export default {
     };
   },
   mounted() {
-    const todos = TodoService.getTodos();
-    this.$store.dispatch("todo/setTodos", todos);
+    this.$store.dispatch("todo/getTodos");
   },
   methods: {
     toggleModal() {
