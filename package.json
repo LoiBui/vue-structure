@@ -4,8 +4,9 @@
   "private": true,
   "description": "A Vue.js project",
   "scripts": {
-    "serve": "NODE_ENV=development vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "dev": "NODE_ENV=development vue-cli-service serve --port 8081",
+    "build-dev": "vue-cli-service build --mode development",
+    "build-prod": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

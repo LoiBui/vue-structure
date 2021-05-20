@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { API_URL } from '../.env'
 import Auth from '../helper/auth'
 class AxiosService {
   constructor () {
@@ -16,7 +15,7 @@ class AxiosService {
     }
 
     const instance = axios.create({
-      baseURL: API_URL
+      baseURL: process.env.VUE_APP_API_URL
     })
     instance.interceptors.response.use(this.handleSuccess, this.handleError)
     this.instance = instance
