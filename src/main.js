@@ -10,7 +10,7 @@ import './plugins'
 import './thirdParty'
 import './directives/globals'
 
-import './scss/style.scss'
+import './assets/scss/style.scss'
 import './assets/fonts/bebasneue.css'
 import './assets/css/main.css'
 
