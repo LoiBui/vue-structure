@@ -9,7 +9,7 @@ export const routes = [
     path: '/',
     name: 'index',
     component: homePage,
-    meta: { title: 'home' }
+    meta: { title: 'Trang Chủ' }
   },
   {
     path: '*',
