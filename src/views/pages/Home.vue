@@ -33,7 +33,8 @@ export default {
   methods: {
     debounceTest() {},
     validateBeforeSubmit() {
-      console.log(this.$refs);
+      // console.log(this.$refs);
+      this.$i18n.locale = 'en';
     },
     onTest() {
       console.log("on test");
